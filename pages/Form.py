@@ -6,7 +6,7 @@ conn = psycopg2.connect(
     host="65.108.32.173",
     database="postgres",
     user="postgres",
-    password=st.secrets["db_password"]
+    password=st.secrets['section']["db_password"]
 )
 
 def update_db(name,twitter,thezos,cuisine,teia):
