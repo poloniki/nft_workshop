@@ -3,3 +3,4 @@ graphviz
 pandas
 numpy
 altair
+Pillow

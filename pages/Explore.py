@@ -5,7 +5,7 @@ conn = psycopg2.connect(
     host="65.108.32.173",
     database="postgres",
     user="postgres",
-    password= 'NQRLGaAjR44JM5Zk' #st.secrets["db_password"]
+    password=st.secrets["db_password"]
 )
 
 df = pd.read_sql_query("SELECT * FROM workshop", conn)
