@@ -10,6 +10,6 @@ conn = psycopg2.connect(
 
 df = pd.read_sql_query("SELECT * FROM workshop", conn)
 df = df.drop(columns=['cuisine'])
-df = df.drop(columns=['cuisine'])
+df = df.drop(columns=['thezos'])
 df.columns = ['Name', 'Tezos', 'Tezos', 'Teia']
 st.write(df.style.format({'Twitter': '<a href="{}" target="_blank">Twitter</a>', 'Tezos': '<a href="{}" target="_blank">Tezos</a>', 'Teia': '<a href="{}" target="_blank">NFT</a>'}).render(), unsafe_allow_html=True)
